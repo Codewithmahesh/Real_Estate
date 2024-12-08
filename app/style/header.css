@@ -1,0 +1,59 @@
+/* Default styles for larger screens */
+.cities {
+    /* Flex container styles */
+  }
+  
+  .cities ul {
+    /* Flex container styles for ul */
+  }
+  
+  /* Styles for the dropdown menu */
+  .absolute {
+    /* Positioning for the dropdown menu */
+  }
+  
+  /* Media queries for smaller screens */
+  @media (max-width: 768px) {
+    .cities {
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start; /* Align items to the start */
+    }
+  
+    .cities ul {
+      flex-direction: column; /* Stack items vertically */
+      width: 100%; /* Full width */
+    }
+  
+    .cities > div {
+      width: 100%; /* Full width for each city item */
+    }
+  
+    .absolute {
+      left: 0; /* Align dropdown menu to the left */
+      right: 0; /* Ensure dropdown menu is full-width */
+      top: 100%; /* Position dropdown below the city item */
+    }
+  
+    .cities li {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  
+    .absolute ul {
+      padding: 0; /* Remove padding for dropdown menu */
+    }
+  
+    .absolute li {
+      font-size: 14px; /* Adjust font size for dropdown items */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cities li {
+      font-size: 12px; /* Further adjust font size for very small screens */
+    }
+  
+    .absolute li {
+      font-size: 12px; /* Adjust font size for dropdown items */
+    }
+  }
+  

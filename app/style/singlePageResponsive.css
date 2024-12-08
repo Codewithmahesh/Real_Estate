@@ -1,0 +1,104 @@
+/* responsive.css */
+
+
+
+
+/* For screens larger than 768px */
+@media screen and (min-width: 830px) {
+  .single-page {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .details {
+    flex: 3;
+    padding-right: 1.5rem;
+  }
+
+  .features {
+    flex: 2;
+  }
+
+  
+}
+
+@media (max-width:840px) and (min-width:580px) {
+    .top{
+        flex-direction: column;
+    }
+    .price{
+        display: none;
+
+    }
+    .mobPrice{
+        display: block;
+        margin-left: .5rem;
+    }
+}   
+
+@media (max-width:580px) {
+    .top{
+        flex-direction: column;
+    }
+    .price{
+        display: none;
+
+    }
+    .mobPrice{
+        display: block;
+        margin-left: .5rem;
+    } 
+    .sizes{
+        flex-direction: column;
+    }
+    .listHorizontal{
+        flex-direction: column; 
+        gap: 2rem;
+    }
+    .buttons{
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 900px) {
+  .sizes {
+    flex-direction: column;
+    width: max-content;
+    gap: 5px;
+  }
+  .listHorizontal {
+    flex-direction: column;
+    gap: 18px;
+  }
+ 
+  .mapContainer{
+    height: 0px;
+  }
+ 
+}
+
+/* For screens larger than 1024px */
+@media screen and (min-width: 1024px) {
+  .post h1 {
+    font-size: 2.5rem;
+  }
+
+  .mapContainer {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1154px) {
+  .sizes {
+    flex-direction: column;
+    width: max-content;
+    gap: 5px;
+  }
+  .listHorizontal {
+    flex-direction: column;
+    gap: 18px;
+  }
+ 
+}
