@@ -9,7 +9,7 @@ interface WrapperProps {
 const Wrapper: React.FC<WrapperProps> = ({ children, className }) => {
   return (
     <div
-      className={`w-[92%] px-5 md:px-10 mx-auto ${
+      className={`w-[100%] md:px-10  mx-auto  ${
         className || ""
       }`}
     >

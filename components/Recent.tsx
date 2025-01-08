@@ -1,7 +1,7 @@
 import React from "react";
 import RecentCard from "./RecentCard";
-import listData from "@/app/lib/dummydata";
 import { Item } from "@/types/types";
+import { listData } from "@/app/lib/dummydata";
 
 const Recent = () => {
   const data: Item[] = listData;
