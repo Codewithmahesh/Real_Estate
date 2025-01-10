@@ -43,7 +43,7 @@ const DropdownFilter = () => {
               // color="primary"
               className="text-lg border-2 text-gray-800 bg-gray-200 border-slate-300 hover:border-slate-500" // Increased text size
             >
-              <div>Bedrooms</div>
+              <div>BHK</div>
               <div>
                 <FaAngleDown className="ml-2 text-xl" />
               </div>
@@ -58,46 +58,10 @@ const DropdownFilter = () => {
               "aria-labelledby": "basic-button",
             }}
           >
-            <MenuItem onClick={handleClose}>1 Bedroom</MenuItem>
-            <MenuItem onClick={handleClose}>2 Bedrooms</MenuItem>
-            <MenuItem onClick={handleClose}>3 Bedrooms</MenuItem>
-            <MenuItem onClick={handleClose}>4+ Bedrooms</MenuItem>
-          </Menu>
-        </div>
-
-        {/* Bathrooms Filter Button */}
-        <div>
-          <div className="flex">
-            <Button
-              id="basic-button-bathrooms"
-              aria-controls={open ? "basic-menu-bathrooms" : undefined}
-              aria-haspopup="true"
-              aria-expanded={open ? "true" : undefined}
-              onClick={handleClick}
-              variant="contained" // Added variant for consistency
-              size="large" // Increased button size
-              // color="primary"
-              className="text-lg border-2 text-gray-800 bg-gray-200 border-slate-300 hover:border-slate-500" // Increased text size
-            >
-              <div>Bathrooms</div>
-              <div>
-                <FaAngleDown className="ml-2 text-xl" />
-              </div>
-            </Button>
-          </div>
-          <Menu
-            id="basic-menu-bathrooms"
-            anchorEl={anchorEl}
-            open={open}
-            onClose={handleClose}
-            MenuListProps={{
-              "aria-labelledby": "basic-button-bathrooms",
-            }}
-          >
-            <MenuItem onClick={handleClose}>1 Bathroom</MenuItem>
-            <MenuItem onClick={handleClose}>2 Bathrooms</MenuItem>
-            <MenuItem onClick={handleClose}>3 Bathrooms</MenuItem>
-            <MenuItem onClick={handleClose}>4+ Bathrooms</MenuItem>
+            <MenuItem onClick={handleClose}>1 BHK</MenuItem>
+            <MenuItem onClick={handleClose}>2 BHK</MenuItem>
+            <MenuItem onClick={handleClose}>3 BHK</MenuItem>
+            <MenuItem onClick={handleClose}>4+ BHK</MenuItem>
           </Menu>
         </div>
       </div>

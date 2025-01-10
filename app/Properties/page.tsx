@@ -61,27 +61,22 @@ const Page = () => {
       )}
 
       {/* Container for the grid of properties */}
-      <div className="relative z-10">
-        <div
-          className="container mx-auto p-4 grid grid-cols-1 gap-6 
-          sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-        >
-          {properties.map((property) => (
-            <PropertyCard
-              key={property.id}
-              title={property.title}
-              price={property.price}
-              image={property.image}
-              bhk={property.bhk}
-              id={property.id} // This should be the actual `property.id`
-              type={property.type}
-              status={property.status}
-              location={property.location}
-              description={property.description}
-              imageUrls={[]}
-            />
-          ))}
-        </div>
+      <div className="container mx-auto p-4 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {properties.map((property) => (
+          <PropertyCard
+            key={property.id}
+            id={property.id}
+            title={property.title}
+            price={property.price}
+            image={property.image}
+            bhk={property.bhk}
+            type={property.type}
+            status={property.status}
+            location={property.location}
+            description={property.description}
+            imageUrls={property.imageUrls}
+          />
+        ))}
       </div>
     </Wrapper>
   );
